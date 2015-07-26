@@ -1,0 +1,21 @@
+//
+   Created by suzanne on 7/25/15.
+html(ng-app="clementineJS")
+   head
+      title clementine.js - A lightweight MEAN stack boilerplate.
+      link(type="text/css" rel="stylesheet" href="public/css/main.min.css")
+   body
+      .navbar(ng-controller="linkCtrlr")
+         h1
+            a.nav-logo(href="/")
+         ul.nav
+            li(material-ripple="")
+               a.nav-button(href="#about_location" ng-click="delayLinkNav($event)") ABOUT
+            li(material-ripple="")
+               a.nav-button(href="#demo_location" ng-click="delayLinkNav($event)") DEMO
+            li(material-ripple="")
+               a.nav-button(href="#features_location" ng-click="delayLinkNav($event)") FEATURES
+            li(material-ripple="")
+               a.nav-button(href="http://johnstonbl01.github.io/clementinejs" target="_blank" ng-click="delayLinkNav($event)") DOCS
+
+
